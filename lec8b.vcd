@@ -1,0 +1,53 @@
+$date
+	Fri Aug 07 16:29:30 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module lec8b_tb $end
+$var wire 1 ! logineq $end
+$var wire 1 " logeq $end
+$var wire 1 # caseineq $end
+$var wire 1 $ caseeq $end
+$var reg 4 % a [3:0] $end
+$var reg 4 & b [3:0] $end
+$scope module uut $end
+$var wire 4 ' a [3:0] $end
+$var wire 4 ( b [3:0] $end
+$var wire 1 ! logineq $end
+$var wire 1 " logeq $end
+$var wire 1 # caseineq $end
+$var wire 1 $ caseeq $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1010 (
+b1010 '
+b1010 &
+b1010 %
+1$
+0#
+1"
+0!
+$end
+#10
+x"
+x!
+0$
+1#
+b1x10 %
+b1x10 '
+#20
+1$
+0#
+b1x10 &
+b1x10 (
+#30

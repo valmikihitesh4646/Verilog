@@ -1,0 +1,34 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002665dcc8550 .scope module, "parameters_tb" "parameters_tb" 2 4;
+ .timescale -9 -9;
+S_000002665dd15060 .scope module, "mut" "parameters" 2 6, 3 1 0, S_000002665dcc8550;
+ .timescale -9 -9;
+P_000002665dcc86e0 .param/l "WIDTH" 0 3 5, +C4<0000000000010000>;
+P_000002665dcc8718 .param/l "cache_line_width" 0 3 4, +C4<00000000000000000000000100000000>;
+P_000002665dcc8750 .param/l "port_id" 0 3 2, +C4<00000000000000000000000000000101>;
+    .scope S_000002665dd15060;
+T_0 ;
+    %vpi_call 3 7 "$display", "port  id = %0d  and cache line width is %0d  and signed width is %0d", P_000002665dcc8750, P_000002665dcc8718, 16'b0000000000010000 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000002665dcc8550;
+T_1 ;
+    %vpi_call 2 9 "$dumpfile", "parameters.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_000002665dcc8550 {0 0 0};
+    %vpi_call 2 12 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\parameters_tb.v";
+    "./parameters.v";

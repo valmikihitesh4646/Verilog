@@ -1,0 +1,26 @@
+$date
+	Tue Jul 28 14:01:01 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module parameters_tb $end
+$scope module mut $end
+$var parameter 16 ! WIDTH $end
+$var parameter 32 " cache_line_width $end
+$var parameter 32 # port_id $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 #
+b100000000 "
+b10000 !
+$end
+#0
+$dumpvars
+$end

@@ -1,0 +1,111 @@
+$date
+	Fri Sep 18 16:39:16 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module synch_counters_pf_tb $end
+$var wire 1 ! q3 $end
+$var wire 1 " q2 $end
+$var wire 1 # q1 $end
+$var wire 1 $ q0 $end
+$var reg 1 % clear $end
+$var reg 1 & clk $end
+$scope module uut $end
+$var wire 1 % clear $end
+$var wire 1 & clk $end
+$var wire 1 ' d0 $end
+$var wire 1 ( d1 $end
+$var wire 1 ) d2 $end
+$var wire 1 * d3 $end
+$var reg 1 $ q0 $end
+$var reg 1 # q1 $end
+$var reg 1 " q2 $end
+$var reg 1 ! q3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0*
+0)
+0(
+1'
+0&
+1%
+0$
+0#
+0"
+0!
+$end
+#5
+1&
+#10
+0&
+0%
+#15
+1(
+1$
+1&
+#20
+0&
+#25
+1)
+1#
+1&
+#30
+0&
+#35
+1*
+1"
+1&
+#40
+0&
+#45
+0'
+1!
+1&
+#50
+0&
+#55
+0(
+0$
+1&
+#60
+0&
+#65
+0)
+0#
+1&
+#70
+0&
+#75
+0*
+0"
+1&
+#80
+0&
+#85
+1'
+0!
+1&
+#90
+0&
+#95
+1(
+1$
+1&
+#100
+0&
+#105
+1)
+1#
+1&
+#110
+0&

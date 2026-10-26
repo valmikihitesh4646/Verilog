@@ -1,0 +1,50 @@
+$date
+	Sun Aug 02 21:19:24 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module exercise2_tb $end
+$var wire 1 ! QBAR $end
+$var wire 1 " Q $end
+$var reg 1 # R $end
+$var reg 1 $ S $end
+$scope module u1 $end
+$var wire 1 " Q $end
+$var wire 1 ! QBAR $end
+$var wire 1 # R $end
+$var wire 1 $ S $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0$
+0#
+x"
+x!
+$end
+#5
+1$
+#6
+0!
+#7
+1"
+#10
+0$
+1#
+#11
+0"
+#12
+1!
+#15
+1$
+#16
+0!
+#20

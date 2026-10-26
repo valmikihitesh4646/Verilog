@@ -1,0 +1,22 @@
+$date
+	Tue Aug 04 17:04:01 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ques_tb $end
+$scope module mut $end
+$var reg 10 ! p [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0x11011011 !
+$end

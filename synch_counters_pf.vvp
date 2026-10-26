@@ -1,0 +1,134 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001e4cf3476b0 .scope module, "synch_counters_pf_tb" "synch_counters_pf_tb" 2 336;
+ .timescale -9 -9;
+v000001e4cf3447f0_0 .var "clear", 0 0;
+v000001e4cf344890_0 .var "clk", 0 0;
+v000001e4cf344930_0 .net "q0", 0 0, v000001e4cf296340_0;  1 drivers
+v000001e4cf3449d0_0 .net "q1", 0 0, v000001e4cf2963e0_0;  1 drivers
+v000001e4cf3a4db0_0 .net "q2", 0 0, v000001e4cf296480_0;  1 drivers
+v000001e4cf3a4d10_0 .net "q3", 0 0, v000001e4cf344750_0;  1 drivers
+S_000001e4cf347c10 .scope module, "uut" "johnsoncounter" 2 340, 3 449 0, S_000001e4cf3476b0;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "q0";
+    .port_info 1 /OUTPUT 1 "q1";
+    .port_info 2 /OUTPUT 1 "q2";
+    .port_info 3 /OUTPUT 1 "q3";
+    .port_info 4 /INPUT 1 "clk";
+    .port_info 5 /INPUT 1 "clear";
+L_000001e4cf3474a0 .functor NOT 1, v000001e4cf344750_0, C4<0>, C4<0>, C4<0>;
+L_000001e4cf3472e0 .functor BUFZ 1, v000001e4cf296340_0, C4<0>, C4<0>, C4<0>;
+L_000001e4cf347510 .functor BUFZ 1, v000001e4cf2963e0_0, C4<0>, C4<0>, C4<0>;
+L_000001e4cf347120 .functor BUFZ 1, v000001e4cf296480_0, C4<0>, C4<0>, C4<0>;
+v000001e4cf347da0_0 .net "clear", 0 0, v000001e4cf3447f0_0;  1 drivers
+v000001e4cf347840_0 .net "clk", 0 0, v000001e4cf344890_0;  1 drivers
+v000001e4cf2960c0_0 .net "d0", 0 0, L_000001e4cf3474a0;  1 drivers
+v000001e4cf296160_0 .net "d1", 0 0, L_000001e4cf3472e0;  1 drivers
+v000001e4cf296200_0 .net "d2", 0 0, L_000001e4cf347510;  1 drivers
+v000001e4cf2962a0_0 .net "d3", 0 0, L_000001e4cf347120;  1 drivers
+v000001e4cf296340_0 .var "q0", 0 0;
+v000001e4cf2963e0_0 .var "q1", 0 0;
+v000001e4cf296480_0 .var "q2", 0 0;
+v000001e4cf344750_0 .var "q3", 0 0;
+E_000001e4cf358d50 .event posedge, v000001e4cf347da0_0, v000001e4cf347840_0;
+    .scope S_000001e4cf347c10;
+T_0 ;
+    %wait E_000001e4cf358d50;
+    %load/vec4 v000001e4cf347da0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001e4cf296340_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v000001e4cf2960c0_0;
+    %assign/vec4 v000001e4cf296340_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_000001e4cf347c10;
+T_1 ;
+    %wait E_000001e4cf358d50;
+    %load/vec4 v000001e4cf347da0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001e4cf2963e0_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v000001e4cf296160_0;
+    %assign/vec4 v000001e4cf2963e0_0, 0;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_000001e4cf347c10;
+T_2 ;
+    %wait E_000001e4cf358d50;
+    %load/vec4 v000001e4cf347da0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001e4cf296480_0, 0;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/vec4 v000001e4cf296200_0;
+    %assign/vec4 v000001e4cf296480_0, 0;
+T_2.1 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_000001e4cf347c10;
+T_3 ;
+    %wait E_000001e4cf358d50;
+    %load/vec4 v000001e4cf347da0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_3.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001e4cf344750_0, 0;
+    %jmp T_3.1;
+T_3.0 ;
+    %load/vec4 v000001e4cf2962a0_0;
+    %assign/vec4 v000001e4cf344750_0, 0;
+T_3.1 ;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_000001e4cf3476b0;
+T_4 ;
+    %delay 5, 0;
+    %load/vec4 v000001e4cf344890_0;
+    %inv;
+    %store/vec4 v000001e4cf344890_0, 0, 1;
+    %jmp T_4;
+    .thread T_4;
+    .scope S_000001e4cf3476b0;
+T_5 ;
+    %vpi_call 2 344 "$monitor", "time = %0t | clk = %b | q0q1q2q3 = %b%b%b%b | clear = %b", $time, v000001e4cf344890_0, v000001e4cf344930_0, v000001e4cf3449d0_0, v000001e4cf3a4db0_0, v000001e4cf3a4d10_0, v000001e4cf3447f0_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001e4cf344890_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001e4cf3447f0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001e4cf3447f0_0, 0, 1;
+    %delay 100, 0;
+    %vpi_call 2 352 "$finish" {0 0 0};
+    %end;
+    .thread T_5;
+    .scope S_000001e4cf3476b0;
+T_6 ;
+    %vpi_call 2 357 "$dumpfile", "synch_counters_pf.vcd" {0 0 0};
+    %vpi_call 2 358 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001e4cf3476b0 {0 0 0};
+    %end;
+    .thread T_6;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\synch_counters_pf_tb.v";
+    "./synch_counters_pf.v";

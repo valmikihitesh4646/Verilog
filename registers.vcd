@@ -1,0 +1,27 @@
+$date
+	Sun Jul 26 16:47:20 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module registers_tb $end
+$scope module mut $end
+$var reg 64 ! save_time [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx !
+$end
+#10
+b1010 !
+#32
+b100000 !
+#200

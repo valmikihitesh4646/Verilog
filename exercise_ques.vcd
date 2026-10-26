@@ -1,0 +1,25 @@
+$date
+	Sat Aug 01 08:08:32 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module exercise_ques_tb $end
+$scope module mut $end
+$var reg 3 ! in_reg [2:0] $end
+$var reg 4 " latch [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1100 "
+b10 !
+$end
+#50

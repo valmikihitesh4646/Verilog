@@ -1,0 +1,51 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000020a171966a0 .scope module, "gate_level_tb" "gate_level_tb" 2 20;
+ .timescale -9 -9;
+S_0000020a17196830 .scope module, "mut" "bufifandnotif" 2 22, 3 40 0, S_0000020a171966a0;
+ .timescale -9 -9;
+L_0000020a171dc028 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+L_0000020a171dc070 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+L_0000020a1726e900 .functor BUFIF1 1, L_0000020a171dc028, L_0000020a171dc070, C4<0>, C4<0>;
+L_0000020a172666b0 .functor BUFIF0 1, L_0000020a171dc028, L_0000020a171dc070, C4<0>, C4<0>;
+L_0000020a17266830 .functor NOTIF1 1, L_0000020a171dc028, L_0000020a171dc070, C4<0>, C4<0>;
+L_0000020a172669b0 .functor NOTIF0 1, L_0000020a171dc028, L_0000020a171dc070, C4<0>, C4<0>;
+v0000020a1726e860_0 .net "ctrl", 0 0, L_0000020a171dc070;  1 drivers
+v0000020a172664d0_0 .net "in", 0 0, L_0000020a171dc028;  1 drivers
+v0000020a17268130_0 .net8 "out1", 0 0, L_0000020a1726e900;  1 drivers, strength-aware
+v0000020a172681d0_0 .net8 "out2", 0 0, L_0000020a172666b0;  1 drivers, strength-aware
+v0000020a17269050_0 .net "out3", 0 0, L_0000020a17266830;  1 drivers
+v0000020a172690f0_0 .net "out4", 0 0, L_0000020a172669b0;  1 drivers
+    .scope S_0000020a17196830;
+T_0 ;
+    %delay 10, 0;
+    %vpi_call 3 52 "$display", " out1 = %0b and out2 =%0b  and out3 = %0b and  out4 = %0b", v0000020a17268130_0, v0000020a172681d0_0, v0000020a17269050_0, v0000020a172690f0_0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000020a17196830;
+T_1 ;
+    %delay 50, 0;
+    %vpi_call 3 53 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0000020a171966a0;
+T_2 ;
+    %vpi_call 2 25 "$dumpfile", "gate_level.vcd" {0 0 0};
+    %vpi_call 2 26 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000020a171966a0 {0 0 0};
+    %delay 50, 0;
+    %vpi_call 2 28 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\gate_level_tb.v";
+    "./gate_level.v";

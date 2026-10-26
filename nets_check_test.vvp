@@ -1,0 +1,38 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000022da96ba670 .scope module, "nets_check_test_tb" "nets_check_test_tb" 2 4;
+ .timescale -9 -9;
+v0000022da96d2570_0 .var "a", 0 0;
+v0000022da96d2610_0 .net "b", 0 0, L_0000022da96b7f60;  1 drivers
+S_0000022da96ba800 .scope module, "mut" "wire_strong_strong_check" 2 8, 3 1 0, S_0000022da96ba670;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "b";
+L_0000022da974b828 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+L_0000022da974b870 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+RS_0000022da9706fe8 .resolv tri, L_0000022da974b828, L_0000022da974b870;
+L_0000022da96b7f60 .functor BUFZ 1, RS_0000022da9706fe8, C4<0>, C4<0>, C4<0>;
+v0000022da96b8ff0_0 .net "b", 0 0, L_0000022da96b7f60;  alias, 1 drivers
+v0000022da96b7ec0_0 .net8 "x", 0 0, RS_0000022da9706fe8;  2 drivers
+    .scope S_0000022da96ba670;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "nets_check_test_tb.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000022da96ba670 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022da96d2570_0, 0, 1;
+    %vpi_call 2 15 "$display", "output of nets_check is : b = ", v0000022da96d2610_0 {0 0 0};
+    %delay 20, 0;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\nets_check_test_tb.v";
+    "./nets_check_test.v";

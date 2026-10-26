@@ -1,0 +1,28 @@
+$date
+	Wed Jul 22 13:05:21 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module nets_check_test_tb $end
+$var wire 1 ! b $end
+$var reg 1 " a $end
+$scope module mut $end
+$var wire 1 ! b $end
+$var wire 1 # x $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x#
+0"
+x!
+$end
+#20

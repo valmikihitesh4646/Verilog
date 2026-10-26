@@ -1,0 +1,67 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000156077bac00 .scope module, "lec8b_tb" "lec8b_tb" 2 126;
+ .timescale -9 -9;
+v00000156078067a0_0 .var "a", 3 0;
+v0000015607806840_0 .var "b", 3 0;
+v00000156078068e0_0 .net "caseeq", 0 0, L_0000015607803f50;  1 drivers
+v0000015607803c30_0 .net "caseineq", 0 0, L_0000015607803ff0;  1 drivers
+v0000015607803cd0_0 .net "logeq", 0 0, L_0000015607803e10;  1 drivers
+v0000015607803d70_0 .net "logineq", 0 0, L_0000015607803eb0;  1 drivers
+S_0000015607806570 .scope module, "uut" "logical" 2 129, 3 124 0, S_00000156077bac00;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "logeq";
+    .port_info 1 /OUTPUT 1 "logineq";
+    .port_info 2 /OUTPUT 1 "caseeq";
+    .port_info 3 /OUTPUT 1 "caseineq";
+    .port_info 4 /INPUT 4 "a";
+    .port_info 5 /INPUT 4 "b";
+v00000156077ba750_0 .net "a", 3 0, v00000156078067a0_0;  1 drivers
+v00000156077b6760_0 .net "b", 3 0, v0000015607806840_0;  1 drivers
+v00000156077f6010_0 .net "caseeq", 0 0, L_0000015607803f50;  alias, 1 drivers
+v00000156077ba490_0 .net "caseineq", 0 0, L_0000015607803ff0;  alias, 1 drivers
+v00000156077ba1d0_0 .net "logeq", 0 0, L_0000015607803e10;  alias, 1 drivers
+v0000015607806700_0 .net "logineq", 0 0, L_0000015607803eb0;  alias, 1 drivers
+L_0000015607803e10 .cmp/eq 4, v00000156078067a0_0, v0000015607806840_0;
+L_0000015607803eb0 .cmp/ne 4, v00000156078067a0_0, v0000015607806840_0;
+L_0000015607803f50 .cmp/eeq 4, v00000156078067a0_0, v0000015607806840_0;
+L_0000015607803ff0 .cmp/nee 4, v00000156078067a0_0, v0000015607806840_0;
+    .scope S_00000156077bac00;
+T_0 ;
+    %vpi_call 2 131 "$monitor", "time = %0t, a=%0b b=%0b| logeq =%0b loginequ=%0b and case equ =%0b  case inequ=%0b", $time, v00000156078067a0_0, v0000015607806840_0, v0000015607803cd0_0, v0000015607803d70_0, v00000156078068e0_0, v0000015607803c30_0 {0 0 0};
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v00000156078067a0_0, 0, 4;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0000015607806840_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 14, 4, 4;
+    %store/vec4 v00000156078067a0_0, 0, 4;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0000015607806840_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 14, 4, 4;
+    %store/vec4 v00000156078067a0_0, 0, 4;
+    %pushi/vec4 14, 4, 4;
+    %store/vec4 v0000015607806840_0, 0, 4;
+    %delay 10, 0;
+    %end;
+    .thread T_0;
+    .scope S_00000156077bac00;
+T_1 ;
+    %vpi_call 2 137 "$dumpfile", "lec8b.vcd" {0 0 0};
+    %vpi_call 2 138 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000156077bac00 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\lec8b_tb.v";
+    "./lec8b.v";

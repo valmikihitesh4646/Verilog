@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Thu Aug 06 03:02:10 2026
+[*]
+[dumpfile] "C:\Users\valmi\OneDrive\Pictures\Documents\Desktop\VERILOG\dataflow_lec8b.vcd"
+[dumpfile_mtime] "Thu Aug 06 02:34:27 2026"
+[dumpfile_size] 655
+[savefile] "C:\Users\valmi\OneDrive\Pictures\Documents\Desktop\VERILOG\full subrac.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -32183 -32178
+*-4.787516 18 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] dataflow_lec8b_tb.
+[sst_width] 211
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 222
+@28
+dataflow_lec8b_tb.uut.a
+dataflow_lec8b_tb.uut.b
+dataflow_lec8b_tb.uut.c
+dataflow_lec8b_tb.uut.diff
+dataflow_lec8b_tb.uut.borr
+[pattern_trace] 1
+[pattern_trace] 0

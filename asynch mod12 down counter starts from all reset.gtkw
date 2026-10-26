@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Mon Sep 14 09:50:08 2026
+[*]
+[dumpfile] "C:\Users\valmi\OneDrive\Pictures\Documents\Desktop\VERILOG\pf_counters.vcd"
+[dumpfile_mtime] "Mon Sep 14 09:47:50 2026"
+[dumpfile_size] 1130
+[savefile] "C:\Users\valmi\OneDrive\Pictures\Documents\Desktop\VERILOG\asynch mod12 down counter starts from all reset.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -191 -186
+*-5.930773 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] pf_counters_tb.
+[sst_width] 211
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 222
+@28
+pf_counters_tb.uut.clk
+pf_counters_tb.uut.clear
+pf_counters_tb.uut.q0
+pf_counters_tb.uut.q1
+pf_counters_tb.uut.q2
+@29
+pf_counters_tb.uut.q3
+[pattern_trace] 1
+[pattern_trace] 0

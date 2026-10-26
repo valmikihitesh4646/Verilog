@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Sep 12 19:14:17 2026
+[*]
+[dumpfile] "C:\Users\valmi\OneDrive\Pictures\Documents\Desktop\VERILOG\udemy_counters.vcd"
+[dumpfile_mtime] "Sat Sep 12 19:12:17 2026"
+[dumpfile_size] 734
+[savefile] "C:\Users\valmi\OneDrive\Pictures\Documents\Desktop\VERILOG\2 bit asyn counter up.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -139 -139
+*-4.937933 100 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] udemy_counters_tb.
+[sst_width] 211
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 222
+@28
+udemy_counters_tb.uut.clk
+udemy_counters_tb.uut.reset
+udemy_counters_tb.uut.q0
+@29
+udemy_counters_tb.uut.q1
+[pattern_trace] 1
+[pattern_trace] 0

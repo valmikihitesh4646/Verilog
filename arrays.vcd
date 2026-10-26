@@ -1,0 +1,20 @@
+$date
+	Mon Jul 27 08:01:56 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module arrays_tb $end
+$scope module mut $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+$end
